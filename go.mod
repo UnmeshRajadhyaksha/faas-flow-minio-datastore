@@ -1,4 +1,4 @@
-module github.com/faasflow/faas-flow-minio-datastore
+module github.com/UnmeshRajadhyaksha/faas-flow-minio-datastore
 
 go 1.13
 
