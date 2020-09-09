@@ -122,7 +122,8 @@ func (minioStore *MinioDataStore) Del(key string) error {
 }
 
 func (minioStore *MinioDataStore) Cleanup() error {
-	err := minioStore.minioClient.RemoveBucket(minioStore.bucketName)
+	//err := minioStore.minioClient.RemoveBucket(minioStore.bucketName)
+	err := nil
 	if err != nil {
 		return fmt.Errorf("error removing: %s, error: %s", minioStore.bucketName, err.Error())
 	}
